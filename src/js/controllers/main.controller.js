@@ -3,12 +3,14 @@ function MainController ($scope){
   $scope.numOfLikes = '';
 
     $scope.totalLikes = function (numOfLikes){
+      let x = (numOfLikes + " likes");
       if (numOfLikes === 1){
-        return (numOfLikes + " like")
+        x = (numOfLikes + " like")
       }
-      else {
-        return (numOfLikes + " likes")
-      }
+      // else {
+      //   // (numOfLikes + " likes")
+      // }
+      return x;
     };
 }
 
